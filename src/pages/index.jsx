@@ -4,10 +4,15 @@ import Jaula3D from "../../public/Jaula3d.png"
 import App1 from "../../public/Screenshot_20230410_164201.jpg"
 import App2 from "../../public/Screenshot_20230410_164205.jpg"
 import QR from "../../public/QR.svg"
-
+import Head from "next/head"
 export default function Home() {
   return (
+     
     <main className="flex flex-col items-center p-4 sm:p-8 tablet:p-12">
+      <Head>
+        <title>Jaula De Amor</title>
+        <link rel="icon" href='/JaulaIcon.png' />
+      </Head>
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex flex-col sm:flex-row items-center justify-center">
           <Image src={JaulaIcon} className="w-20 sm:w-32 mb-4 sm:mb-0" />
